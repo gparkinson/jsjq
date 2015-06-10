@@ -14,6 +14,7 @@
         width:50%;
       }
 
+      
       .idle{
         background-color:lightgray;
       }
@@ -21,6 +22,8 @@
       .selected {
         background-color: gold;
       }
+      
+    
       input[type="button"]  {
         border: 1px solid grey;
         width: 100px;
@@ -67,6 +70,7 @@
          $('input[value="Clear"]').click( function(){
           console.log('Caught a "Clear" click event.');
           $("#output_area").removeClass( 'selected');
+    
        /*   alert("The looping function should go here."); */
           clear_and_reset();
          
