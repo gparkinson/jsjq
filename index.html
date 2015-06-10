@@ -83,10 +83,12 @@
         var output_html;
         var count = 0;
         output_html="<p>The script is starting...</p>";
-        while (count<10) {
+      /* while (count<10) {
           output_html= output_html + "Times this loop has run: "+ count +"<br />";
-          count++;
-        }
+          count++; */
+        for (var count = 1; count <=10; count++) {
+            output_html= output_html + "Times this loop has run: "+ count +"<br />";
+          } 
         output_html += "<p>The script is done.</p>";
         $("#output_area").html(output_html);
       }
